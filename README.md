@@ -16,12 +16,18 @@ sudo apt install gcc && sudo apt install ripgrep && sudo apt install fd-find
 
 ```
 cd ~/.config
+```
+```
 git clone https://github.com/dinno7/nvim-config.git nvim
+```
+```
 cd nvim
+```
+```
 nvim ./lua/dinno/plugins-setup.lua
 ```
 
-Then save this file to update and install packages by packer (cmd ==> ":w")
+### Then save this file to update and install packages by packer (cmd ==> ":w")
 
 Documentation will be written soon....
 
