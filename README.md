@@ -1,6 +1,6 @@
 # Nvim configuration
 
-### 1) First you need install last version of [Nvim](https://neovim.io/)
+### 1) First you need install last version of [Nvim](https://neovim.io/) (at least v8)
 
 ### 2) Install dependencies(for telescope plugin):
 
