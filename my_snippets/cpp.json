@@ -1,0 +1,46 @@
+{
+  "CPP default structure": {
+    "prefix": ["cpp", "++"],
+    "body": [
+      "#include <iostream>",
+      "using str = std::string;",
+      "// - If you want to use bottom option globally uncomment them:",
+      "// using std::cin;",
+      "// using std::cout;",
+      "// using std::endl;",
+      "\nint main()",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description": "CPP default structure"
+  },
+  "Print something": {
+    "prefix": ["cout", "print", "log", "cl"],
+    "body": ["std::cout << ${0:yourOutput};"],
+    "description": "Print something"
+  },
+  "Print something with new line": {
+    "prefix": ["cout_endl", "print_endl", "log_endl", "cl_endl"],
+    "body": ["std::cout << ${0:yourOutput} << std::endl;"],
+    "description": "Print something with new line"
+  },
+  "Get input": {
+    "prefix": ["cin", "input"],
+    "body": ["std::cin  >> ${0:variable};"],
+    "description": "Get input"
+  },
+  "Get complete line input": {
+    "prefix": ["cin_line", "input_line"],
+    "body": ["std::getline(std::cin >> std::ws, ${0:variable});"],
+    "description": "Get complete line input"
+  },
+  "Generate new random number": {
+    "prefix": ["random"],
+    "body": [
+      "srand(time(NULL));",
+      "int ${0:varName} = (rand() % ${1:fromOneUntilThisNumber}) + 1; // - Generate random number from 1 until ${1:fromOneUntilThisNumber}"
+    ],
+    "description": "Generate new random number"
+  }
+}

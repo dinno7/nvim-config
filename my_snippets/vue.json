@@ -1,0 +1,151 @@
+{
+  "Vue js optional template": {
+    "prefix": ["vue-option-api", "vueOptionAPI"],
+    "body": [
+      "<script>",
+      "\texport default {",
+      "",
+      "\t}",
+      "</script>",
+      "",
+      "<template>",
+      "\t${0}",
+      "</template>",
+      "",
+      "<style scoped>",
+      "\t",
+      "</style>"
+    ],
+    "description": "Vue js optional template"
+  },
+  "Vue js 3 composition template": {
+    "prefix": ["vue-composition", "vueInit", "vue"],
+    "body": [
+      "<script setup lang=\"ts\">",
+      "\t",
+      "</script>",
+      "",
+      "<template>",
+      "\t${0}",
+      "</template>",
+      "",
+      "<style scoped>",
+      "\t",
+      "</style>"
+    ],
+    "description": "Vue js 3 composition template"
+  },
+  "Vue js script setup ts": {
+    "prefix": ["v-sts", "v-tss"],
+    "body": ["<script setup lang=\"ts\">", "\t${0}", "</script>", ""],
+    "description": "Vue js script setup ts"
+  },
+  "Data object in vue-script": {
+    "prefix": "v-data",
+    "body": ["data() {", "\treturn {", "\t\t$0", "\t};", "},"],
+    "description": "Write data function in vue-script"
+  },
+  "Methods object in vue-script": {
+    "prefix": "v-mtds",
+    "body": ["methods: {", "$0", "},"],
+    "description": "Write methods object in vue-script"
+  },
+  "Insert new method object in vue-script": {
+    "prefix": "v-mtd",
+    "body": ["$methodName($properties) {", "\t$0", "},"],
+    "description": "Insert new method object in vue-script"
+  },
+  "Computed object in vue-script": {
+    "prefix": "v-computed",
+    "body": ["computed: {", "\t$computedName() {", "\t\t$0", "\t}", "},"],
+    "description": "Write computed object in vue-script"
+  },
+  "Prop object in vue-script": {
+    "prefix": "v-prps",
+    "body": ["props: {", "\t$0", "},"],
+    "description": "Write prop object in vue-script"
+  },
+  "Insert new prop object in vue-script": {
+    "prefix": "v-prp",
+    "body": [
+      "$propName: {",
+      "\ttype: $String,",
+      "\trequire: $false,",
+      "\tdefault: $defValue,",
+      "},"
+    ],
+    "description": "Insert new prop object in vue-script"
+  },
+  "Watchers object in vue-script": {
+    "prefix": "v-watchers",
+    "body": ["watch: {", "\t$0", "},"],
+    "description": "Write watch object in vue-script"
+  },
+  "Insert new watcher object in vue-script": {
+    "prefix": "v-watcher",
+    "body": ["$watcherName($newValue, $oldValue) {", "\t$0", "},"],
+    "description": "Insert new watcher object in vue-script"
+  },
+  "Insert new deep watcher object in vue-script": {
+    "prefix": "v-dpWatcher",
+    "body": [
+      "$watcherName: {",
+      "\thandler($newValue, $oldValue) {",
+      "\t\t$0",
+      "\t},",
+      "\tdeep: true,",
+      "},"
+    ],
+    "description": "Insert new deep watcher object in vue-script"
+  },
+  "Before create hook vue-script": {
+    "prefix": "v-beforeCreate",
+    "body": ["beforeCreate () {", "\t$0", "},"],
+    "description": "Write before create hook in vue-script"
+  },
+  "Created hook vue-script": {
+    "prefix": "v-created",
+    "body": ["created () {", "\t$0", "},"],
+    "description": "Write created hook in vue-script"
+  },
+  "Before mount hook vue-script": {
+    "prefix": "v-beforeMount",
+    "body": ["beforeMount () {", "\t$0", "},"],
+    "description": "Write before mount hook in vue-script"
+  },
+  "Mounted hook vue-script": {
+    "prefix": "v-mounted",
+    "body": ["mounted () {", "\t$0", "},"],
+    "description": "Write mounted hook in vue-script"
+  },
+  "Before update hook vue-script": {
+    "prefix": "v-beforeUpdate",
+    "body": ["beforeUpdate () {", "\t$0", "},"],
+    "description": "Write before update hook in vue-script"
+  },
+  "Updated hook vue-script": {
+    "prefix": "v-updated",
+    "body": ["updated () {", "\t$0", "},"],
+    "description": "Write updated hook in vue-script"
+  },
+  "Before unmount hook vue-script": {
+    "prefix": "v-beforeUnmount",
+    "body": ["beforeUnmount () {", "\t$0", "},"],
+    "description": "Write before unmount hook in vue-script"
+  },
+  "Unmounted hook vue-script": {
+    "prefix": "v-unmounted",
+    "body": ["unmounted () {", "\t$0", "},"],
+    "description": "Write unmounted hook in vue-script"
+  },
+  "Use new composable": {
+    "prefix": "use",
+    "body": ["const ${2:name} = ${1:composableName}();", "${0}"],
+    "description": "Use new composable"
+  },
+  "Use new composable-destructure": {
+    "prefix": ["use-destructured", "useDestructured", "usedestructured"],
+    "body": ["const {${2:name}} = ${1:composableName}();", "${0}"],
+    "description": "Use new composable-destructure"
+  }
+}

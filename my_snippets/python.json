@@ -1,0 +1,7 @@
+{
+  "Print to console": {
+    "prefix": ["print", "cl", "pr", "clp", "log"],
+    "body": ["print($1)", "$2"],
+    "description": "Log output to console"
+  }
+}

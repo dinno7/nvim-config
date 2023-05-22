@@ -1,0 +1,126 @@
+{
+  "Logging some string": {
+    "prefix": ["clS", "logS"],
+    "body": [
+      "console.log('✨ ~ in $RELATIVE_FILEPATH at line $TM_LINE_NUMBER ~> ', '${1}');${0}"
+    ],
+    "description": "Logging some string"
+  },
+  "Logging sth": {
+    "prefix": ["clp", "log"],
+    "body": [
+      "console.log('✨ ~ in $RELATIVE_FILEPATH at line $TM_LINE_NUMBER ~> ', $TM_SELECTED_TEXT${1});${0}"
+    ],
+    "description": "Logging sth"
+  },
+  "Error logging": {
+    "prefix": ["cle", "ce", "loge", "log error", "cl error"],
+    "body": [
+      "console.log('⭕️ ~ ERROR  ~ in $WORKSPACE_NAME: $RELATIVE_FILEPATH at line $TM_LINE_NUMBER ~> ❗', ${1});${0}"
+    ],
+    "description": "Logging error"
+  },
+  "Log some string complete": {
+    "prefix": ["clgs"],
+    "body": [
+      "console.log('✨ ~ $CURRENT_YEAR-$CURRENT_MONTH($CURRENT_MONTH_NAME_SHORT)-$CURRENT_DATE($CURRENT_DAY_NAME_SHORT) $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND in $RELATIVE_FILEPATH at line $TM_LINE_NUMBER ~> ', '${1}');${0}"
+    ],
+    "description": "Log some string complete"
+  },
+  "Logging sth pure": {
+    "prefix": ["cl"],
+    "body": ["console.log('✨', ${1});${0}"],
+    "description": "Logging sth pure"
+  },
+  "Log something complete": {
+    "prefix": ["clg"],
+    "body": [
+      "console.log('✨ ~ $CURRENT_YEAR-$CURRENT_MONTH($CURRENT_MONTH_NAME_SHORT)-$CURRENT_DATE($CURRENT_DAY_NAME_SHORT) $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND in $RELATIVE_FILEPATH at line $TM_LINE_NUMBER ~> ', ${1});${0}"
+    ],
+    "description": "Log something in console"
+  },
+  "Import in javascript": {
+    "prefix": ["imp"],
+    "body": ["import $2 from '$1';"],
+    "description": "Import sth in javascript"
+  },
+  "Parse json": {
+    "prefix": ["jp", "JP"],
+    "body": ["JSON.parse($1);${0}"],
+    "description": "Parse json"
+  },
+  "Json to string": {
+    "prefix": ["js", "JS"],
+    "body": ["JSON.stringify($1);${0}"],
+    "description": "Json to string"
+  },
+  "Deep copy": {
+    "prefix": ["dp", "dpc"],
+    "body": ["JSON.parse(JSON.stringify($1));${0}"],
+    "description": "Deep copy"
+  },
+  "Query selector": {
+    "prefix": "qs",
+    "body": ["$document.querySelector('${1}');${0}"],
+    "description": "Document query selector to select an element in js"
+  },
+  "Query selector All": {
+    "prefix": "qsa",
+    "body": ["$document.querySelectorAll('${1}');${0}"],
+    "description": "Document query selector aa to select elements in js"
+  },
+  "Add event listener": {
+    "prefix": ["ae", "dae", "ael", "dael"],
+    "body": ["$document.addEventListener('$eventName', $event);${0}"],
+    "description": "Add event listener in js"
+  },
+  "Remove event listener": {
+    "prefix": ["re", "dre", "rel", "drel"],
+    "body": ["$document.removeEventListener('$eventName', $event);${0}"],
+    "description": "Remove event listener in js"
+  },
+  "Function": {
+    "prefix": ["fn", "func", "function"],
+    "body": ["function ${2:funcName}(${1:properties}) {", "\t$0", "}"],
+    "description": "Function"
+  },
+  "Mehod function": {
+    "prefix": ["fn_mtd", "func_mtd", "function_mtd"],
+    "body": ["${1:Function name}: function(${2:req}, ${3:res}) {", "\t$0", "}"],
+    "description": "Function"
+  },
+  "Async mehod function": {
+    "prefix": ["fn_mtd_async", "func_mtd_async", "function_mtd_async"],
+    "body": [
+      "${1:Function name}: async function(${2:req}, ${3:res}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Function"
+  },
+  "Arrow function": {
+    "prefix": ["af", "arw-fn", "afn", "fn-arrow", "arrow-function"],
+    "body": ["const ${1:funcName} = (${2:properties}) => {$3}$0"],
+    "description": "Arrow function"
+  },
+  "Import in nodejs": {
+    "prefix": "rqr",
+    "body": ["const $2 = require('$1');", "${0}"],
+    "description": "Import new module in nodejs 2"
+  },
+  "Import separate in nodejs": {
+    "prefix": ["seprqr", "rqrsep"],
+    "body": ["const {$2} = require('$1');", "${0}"],
+    "description": "Import separately new module in nodejs 2"
+  },
+  "Import built-in modules in nodejs": {
+    "prefix": ["s-rqr", "same-rqr", "rqr2"],
+    "body": ["const $1 = require('$1');", "${0}"],
+    "description": "Import new built-in module in nodejs 2"
+  },
+  "Import new module in nodejs": {
+    "prefix": "req",
+    "body": ["require('${1}');", "${0}"],
+    "description": "Import new module in nodejs 2"
+  }
+}
