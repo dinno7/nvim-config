@@ -40,7 +40,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 opt.iskeyword:append("-") -- consider string-string as whole word
 
-opt.foldcolumn = "1"
-opt.foldlevel = 99
-opt.foldlevelstart = -1
-opt.foldenable = true
+-- enable fold option
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.cmd("set nofoldenable") -- set folding disabled when file is open
