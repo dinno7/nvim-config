@@ -1,8 +1,7 @@
 # Nvim configuration
+### 1 - First you need install last version of [Nvim](https://neovim.io/) (at least v8)
 
-### 1) First you need install last version of [Nvim](https://neovim.io/) (at least v8)
-
-### 2) Install dependencies(for telescope plugin):
+### 2 - Install dependencies(for telescope plugin):
 
 ```
 sudo apt update && sudo apt upgrade -y
@@ -12,7 +11,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install gcc && sudo apt install ripgrep && sudo apt install fd-find
 ```
 
-### 3) Clone repo
+### 3 - Clone repo
 
 ```
 cd ~/.config
@@ -32,3 +31,6 @@ nvim ./lua/dinno/plugins-setup.lua
 Documentation will be written soon....
 
 Enjoy it...
+
+You can also see [this youtube video](https://www.youtube.com/watch?v=vdn_pKJUda8&list=PLBMH5SxWG2tbceTDA-Xv4EuKNCX-PqtPX&index=9) to undranstand better that how this config works.
+this config cloned from that video but with some more features...
