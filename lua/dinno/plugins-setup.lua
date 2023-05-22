@@ -14,10 +14,10 @@ local packer_bootstrap = ensure_packer() -- true if packer was just installed
 -- autocommand that reloads neovim and installs/updates/removes plugins
 -- when file is saved
 vim.cmd([[ 
-  augroup packer_user_config
-  autocmd!
-  autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
-  augroup end
+augroup packer_user_config
+autocmd!
+autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
+augroup end
 ]])
 
 -- import packer safely
@@ -33,6 +33,8 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+	use("EdenEast/nightfox.nvim") -- nightfox colorScheme
+	use("catppuccin/nvim")
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 	-- when use <<leader>sh> or <<leader>sv> you can navigate them by
