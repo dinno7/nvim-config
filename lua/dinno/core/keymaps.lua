@@ -13,6 +13,16 @@ keymap.set("i", "jk", "<ESC>")
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
+-- select all in file
+keymap.set("n", "<leader>aa", "gg<S-v>G")
+
+-- format the file
+keymap.set("n", "<leader>ii", "gg<S-v>G==<ESC>")
+
+-- New line in normal mode
+keymap.set("n", "<leader>oo", "o<ESC>")
+keymap.set("n", "<leader>OO", "O<ESC>")
+
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
@@ -25,11 +35,9 @@ keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
+keymap.set("n", "<C-w>", ":close<CR>") -- close current split window
+keymap.set("n", "<C-s>", ":w<CR>") -- close current split window
 
--- Save and close keybinding
-keymap.set({ "n", "i" }, "<C-s>", ":w<CR>") -- save current window
-
--- Tabs
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
