@@ -8,7 +8,7 @@ sudo apt update && sudo apt upgrade -y
 ```
 
 ```
-sudo apt install gcc && sudo apt install ripgrep && sudo apt install fd-find
+sudo apt install build-essential && sudo apt install ripgrep && sudo apt install fd-find
 ```
 
 ### 3 - Clone repo
